@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.header h2 {
+    background-color: #4dc1b4;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #4dc1b4;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    text-align: left;
+}
+
+.large-box {
+    grid-column: span 2;
+}
+
+.image-placeholder {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+}
+
+.image-placeholder img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Experience</h2>
+        </div>
+        <div class="experience">
+            <div class="box large-box">
+                <p><strong>I really like animals.</strong> So I have experience defending animals such as cows, goats, horses, and deer. This also made me love animals again. In the morning, me and my cousin will feed the farm animals. With that, I also learned how to slaughter a goat, skin the goat, and wash the insides of the goat.</p>
+            </div>
+            <div class="box">
+                <p>I have also worked as a caterer for weddings. This experience is also very valuable because it requires interaction with the public.</p>
+            </div>
+            <div class="box">
+                <p>When I graduated SPM, I also worked with my father as a wiring man. I learned many things with him; until now, I am also able to make my own wiring. I also learned how to build a homestay.</p>
+            </div>
+            <div class="box">
+                <p>I used to work part-time as a gym cashier and until now I'm still working. I also got experience teaching people to exercise.</p>
+            </div>
+            <div class="image-placeholder">
+                <img src="https://via.placeholder.com/200" alt="Landscape Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #000;
+        }
+
+        header h1 {
+            color: #00d8ff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            background-color: #2a9d8f;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00bcd4;
+            color: #fff;
+        }
+
+        /* Main Content */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 10%;
+            background-color: #111;
+        }
+
+        .content img {
+            max-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .text-content {
+            max-width: 500px;
+        }
+
+        .text-content h2 {
+            color: #00d8ff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .text-content p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .buttons a {
+            display: inline-block;
+            background-color: #2a9d8f;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #00bcd4;
+        }
+
+        /* Triangle Neon Effect */
+        .triangle {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            z-index: -1;
+        }
+
+        .triangle::before,
+        .triangle::after {
+            content: '';
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border: 4px solid;
+            border-color: #00d8ff #00d8ff transparent transparent;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+
+        .triangle::after {
+            left: 50px;
+            top: 50px;
+            border-color: #ff00ff #ff00ff transparent transparent;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome !</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About me</a>
+            <a href="#">Education</a>
+            <a href="#">Experience</a>
+            <a href="#">Family</a>
+            <a href="#">Gallery</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content">
+        <div class="triangle"></div>
+        <div class="text-content">
+            <h2>I'm Muhammad Izzuddin</h2>
+            <p>Thanks for visiting my website. Here is some information about me, enjoy it !!</p>
+        </div>
+        <img src="https://via.placeholder.com/250" alt="Profile Image">
+    </section>
+
+    <!-- Image Section -->
+    <section>
+        <div style="display: flex; justify-content: center; padding: 20px;">
+            <img src="https://via.placeholder.com/500x200" alt="Landscape Image" style="border-radius: 10px;">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>DINZ</p>
+    </footer>
+</body>
+</html>
